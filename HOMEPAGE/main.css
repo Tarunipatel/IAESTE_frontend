@@ -1,0 +1,639 @@
+*
+{
+    box-sizing: border-box;
+}
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+html,body
+{
+    height: 100vh;
+    font-family: 'Roboto';
+    padding: 0;
+    margin: 0;
+    height: 3500px;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+a
+{
+    text-decoration: none;
+}
+ul
+{
+    list-style-type: none;
+}
+img
+{
+    width: 100%;
+    height: 800px;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+.navbar ul
+{
+    display: flex;
+}
+.navbar ul li a
+{
+    color: white;
+    margin: 0 1em;
+    font-size: 1.3em;
+}
+
+.main-section .main_section_logo
+{
+    text-align: center;
+    margin-top: 16em;
+    transform: scale(1.6);
+}
+.main-section .buttons 
+{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.main-section h1
+{
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 1.5em;
+    font-size: 3em;
+}
+.main-section .buttons button
+{
+    border: none;
+    background-color: rgba(19, 128, 218,0.8);
+    padding: 1em 2.5em;
+    border-radius: 4px;
+    font-size: 1.2em;
+    color: white;
+    margin-top: 3em;
+}
+.main-section .buttons button:hover
+{
+    background:linear-gradient(rgb(10, 122, 197),rgb(18, 70, 138));
+    transform: translateY(-1px);
+}
+.know_more
+{
+    margin-right: 1em;
+}
+.register
+{
+    margin-left: 1em;
+}
+.img-slider
+{
+    z-index: 1;
+    position: relative;
+    width: 100%;
+}
+.img-slider .slide
+{
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+.img-slider .slide.active
+{
+    clip-path: circle(150% at 0 50%);
+    transition: 0.5s;
+    transition-property: clip-path;
+}
+.img-slider .slide img
+{
+    width: 100%;
+}
+.img-slider .navigation
+{
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 45em;
+}
+.img-slider .navigation .btn
+{
+    background-color: white;
+    border: none;
+    width: 175px;
+    height: 4px;
+    margin: 0 1em;
+    border-radius: 2px;
+}
+.img-slider .navigation .btn.active
+{
+    background: linear-gradient(rgb(32, 133, 228),rgb(12, 87, 148));
+}
+.hero1
+{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    right: 0;
+}
+.white
+{
+    position: absolute;
+    top: 90%;
+    height: 1400px;
+    width: 100%;
+    background-color: white;
+    margin-top: 4em;
+}
+::-webkit-scrollbar
+{
+    display:none;
+}
+.blocks
+{
+    position: absolute;
+    bottom: 55%;
+    place-content: center;
+    text-align: center;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+.block1,.block2,.block3,.block4
+{
+    position: relative;
+    background-color: rgba(19, 128, 218,1);
+    width: 250px;
+    height: 250px;
+    margin: 0 2em;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgb(58, 162, 231);
+    cursor: pointer;
+}
+.blockBlock1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.blockBlock2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block1 h1
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: white;
+    bottom: 20%;
+    font-size: 1.3em;
+    font-weight: 400;
+    margin:0 1em;
+}
+.block1:hover
+{
+    background:linear-gradient(rgb(24, 163, 255),rgb(18, 70, 138));
+}
+.block2:hover
+{
+    background:linear-gradient(rgb(10, 122, 197),rgb(18, 70, 138));
+}
+.block3:hover
+{
+    background:linear-gradient(rgb(10, 122, 197),rgb(18, 70, 138));
+}
+.block4:hover
+{
+    background:linear-gradient(rgb(10, 122, 197),rgb(18, 70, 138));
+}
+.block1 .icon1
+{
+    transform: scale(0.5);
+}
+.block2 h1
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: white;
+    bottom: 20%;
+    font-size: 1.3em;
+    font-weight: 400;  
+    margin:0 1em;
+    text-align: center;
+}
+.block2 .icon2
+{
+    transform: scale(0.45);
+}
+.block3 h1
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: white;
+    bottom: 20%;
+    font-size: 1.3em;
+    font-weight: 400;  
+    margin:0 1em;
+}
+.block3 .icon3
+{
+    transform: scale(0.4);
+    display: block;
+    margin-top:-1em ;
+}
+.block4 h1
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: white;
+    bottom: 20%;
+    font-size: 1.3em;
+    font-weight: 400;  
+    margin:0 1em;
+}
+.block4 .icon4
+{
+    transform: scale(0.75);
+    display: block;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-left: 0.8em;
+}
+.numbers
+{
+    background-color: rgb(212, 212, 212);
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    margin-top: 2em;
+    display: flex;
+    left: 0;
+    right: 0;
+    color: white;
+}
+.counter
+{
+    color: white;
+    font-size: 1.7em;
+    font-weight: 400;
+}
+.numbers h1
+{
+    font-weight: 400;
+    color: black;
+}
+.number1
+{
+    position: absolute;
+    text-align: center;
+    margin-left: 4em;
+}
+.number1 .info
+{
+    margin-top: -1.5em;
+}
+.number1-icon
+{
+    transform: scale(0.45);
+}
+.number2
+{
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+.number2-icon
+{
+    transform: scale(0.45);
+    margin-top: 1.2em;
+}
+.number3
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    margin-right: 4em;
+}
+.number3-icon
+{
+    transform: scale(0.45);
+}
+.membership
+{
+    background-color: rgb(48, 47, 47);
+    width: 100%;
+    height: 600px;
+    position: relative;
+    margin-top: 125em; 
+    z-index: 1000;
+    color: white;
+    padding: 2em;
+}
+.membership p
+{
+    line-height: 25px;
+    font-size: 1.25em;
+}
+.membership h1
+{
+    margin-top: -0.25em;
+    font-size: 3em;
+    text-align: center;
+    font-weight: 500;
+}
+.membership .grid
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.txt1
+{
+    width:650px;
+}
+.txt2
+{
+    width: fit-content;
+}
+.membership .txt2 button
+{
+    border: none;
+    font-size: 1em;
+    background-color: rgb(34, 106, 199);
+    padding: 1em 2em;
+    color: white;
+    border-radius: 5px;
+}
+.membership .txt2 button:hover
+{
+    background:linear-gradient(rgb(14, 97, 136),rgb(16, 75, 151));
+}
+.contact_us
+{
+    width: 100%;
+    margin-top: 4em;
+    display: grid;
+    padding: 2em;
+    grid-template-columns: 60% 40%;
+}
+.contact_us1
+{
+    width: 700px;
+    height: 500px;
+    position: relative;
+}
+.contact_us1 iframe
+{
+    width: 800px;
+    position: relative;
+    border-radius: 10px;
+}
+.contact_us .form h1
+{
+    color: black;
+}
+.contact_us .form h3
+{
+    font-weight:400;
+    font-size:1.2em;
+}
+input
+{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(194, 194, 194);
+}
+.counter
+{
+    font-size: 2em;
+    color: aqua;
+}
+.message input
+{
+    height: 150px;
+}
+#sf
+{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2em;
+    background:linear-gradient(rgb(24, 163, 255),rgb(27, 109, 216));
+    border: none;
+    padding: 1em 4em;
+    color: white;
+    font-size: 1.3em;
+    border-radius: 5px;
+    cursor:pointer;
+}
+#sf:hover
+{
+    background:linear-gradient(rgb(24, 163, 255),rgb(18, 70, 138));
+}
+.ig
+{
+    transform: scale(0.5);
+}
+.fb
+{
+    transform: scale(0.5);
+}
+.li
+{
+    transform: scale(0.5);
+}
+.handles
+{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    transform: scale(0.8);
+}
+.social-media
+{
+    display: flex;
+    justify-content: center;
+    margin-right: 4em;
+    border-right: 2px solid black;
+    width: 500px;
+    height: 100px;
+}
+.social-media div
+{
+    margin: 0 0.75em;
+}
+.contact-details
+{
+    margin-left: 4em;
+    margin-top: -1em;
+}
+.emaill svg
+{
+    transform: scale(0.5);
+}
+.emaill
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.phone svg
+{
+    transform: scale(0.5);
+}
+.phone
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width:1400px)
+{
+    .contact_us1 iframe
+    {
+        width: 700px;
+    }
+}
+@media only screen and (max-width:1300px)
+{
+    .contact_us1 iframe
+    {
+        width: 650px;
+    }
+}
+@media only screen and (max-width:1200px)
+{
+    .contact_us1 iframe
+    {
+        width: 620px;
+    }
+}
+@media only screen and (max-width:1100px)
+{
+    .body
+    {
+        height: 4000px;
+    }
+    .contact_us
+    {
+        display: unset;
+    }
+    .form
+    {
+        margin-top: 4em;
+    }
+    .form h1
+    {
+        text-align: center;
+    }
+    .contact_us1 iframe
+    {
+        width: 1000px;
+        text-align: center;
+        display: block;
+        place-content: center;
+        margin-left: 2em;
+    }
+    .contact_us .form h3
+    {
+        margin-left: 4em;
+    }
+    .contact_us .form input
+    {
+        width: 800px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+    .white
+    {
+        position: absolute;
+        top: 100%;
+        height: 1000px;
+        width: 100%;
+        background-color: white;
+        margin-top: 4em;
+    }
+}
+@media only screen and (max-width:800px)
+{
+    input
+    {
+        max-width: 600px;
+    }
+    header
+    {
+        transform: scale(0.9);
+    }
+    .main-section
+    {
+        transform: scale(0.9);
+    }
+    .navigation .btn
+    {
+        transform: scale(0.9);
+    }
+    iframe
+    {
+        max-width: 700px;
+        text-align: center;
+        position: inherit;
+        right: -5%;
+    }
+    .grid
+    {
+    display: grid;
+    }
+    .txt1,.txt2
+    {
+        transform: scale(0.8);
+        margin-left: -2em;
+        margin-top: -1em;
+    }
+}
+@media only screen and (max-width:700px)
+{
+    input
+    {
+        max-width: 400px;
+    }
+    .grid
+    {
+        margin-left: 1em;
+    }
+    .txt1
+    {
+        margin-right: 1em;
+    }
+    .txt2
+    {
+        margin-left: 1em;
+    }
+}
+@media only screen and (max-width:600px)
+{
+    input
+    {
+        max-width: 400px;
+    }
+}
