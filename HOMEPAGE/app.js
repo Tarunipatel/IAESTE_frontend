@@ -3,7 +3,6 @@ const buttons = document.querySelectorAll('.btn');
 
 const currentSlide = 1;
 
-
 const repeat = ()=>
 {
     let i=0;
@@ -28,7 +27,7 @@ const repeat = ()=>
                 return;
             }
             repeater();
-        },7000)
+        },6500);
     }
     repeater();
 }
@@ -56,6 +55,40 @@ buttons.forEach((button,i)=>
     })
 })
 
+const country = document.querySelector('.countries');
+const images = ['France','UnitedKingdom','Canada','Switzerland','Australia','Greece'];
+const countryName = document.querySelector('#countryName');
+const countryChange = ()=>
+{
+    let i=0;
+    const rep = ()=>
+    {
+        setTimeout(()=>
+        {
+            if(images[i]==='UnitedKingdom')
+            {
+                countryName.innerText = 'United Kingdom';
+            }
+            else
+            {
+                countryName.innerText = `${images[i]}`;
+            }
+            country.src = `Countries/${images[i]}.jpg`;
+            i++;
+            if(i==images.length)
+            {
+                i=0;
+            }
+            if(i>=images.length)
+            {
+                return;
+            }
+            rep();
+        },1000)
+    }
+    rep();
+}
+countryChange();
 $(document).ready(function()
 {
   $(".counter").counterUp({
