@@ -170,24 +170,24 @@ border-radius: 50%;
 }
 .sides1{
     position: absolute;
-    top: 85%;
-    left: 5%;
+    top: 90%;
+    left: 12%;
 }
 .side1{
     position: absolute;
     top: 115%;
-    left: 10%;
+    left: 16%;
     transform: translate(-50%, -50%);
 }
 .side2{
     position: absolute;
     top: 115%;
-    left: 25%;
+    left: 31%;
     transform: translate(-50%, -50%); 
 }
 .sides2{
     position: absolute;
-    top: 85%;
+    top: 90%;
     left: 60%;
     
 }
@@ -205,18 +205,160 @@ border-radius: 50%;
 }
 .sides3{
     position: absolute;
-    top: 130%;
-    left: 5%;
+    top: 135%;
+    left: 12%;
 }
 .side5{
     position: absolute;
     top: 160%;
-    left: 10%;
+    left: 16%;
     transform: translate(-50%, -50%);
 }
+
 .side6{
     position: absolute;
     top: 160%;
-    left: 25%;
+    left: 31%;
     transform: translate(-50%, -50%); 
+}
+.sides4{
+    position: absolute;
+    top: 135%;
+    left: 60%;
+    
+}
+.side7{
+    position: absolute;
+    top: 160%;
+    left: 65%;
+    transform: translate(-50%, -50%); 
+}
+
+.side8{
+    position: absolute;
+    top: 160%;
+    left: 80%;
+    transform: translate(-50%, -50%); 
+}
+.sides5{
+    position: absolute;
+    top: 180%;
+    left: 12%;
+}
+.side9{
+    position: absolute;
+    top: 205%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+}
+.side10{
+    position: absolute;
+    top: 205%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+}
+
+.sides6{
+    position: absolute;
+    top: 180%;
+    left: 60%;
+}
+.side11{
+    position: absolute;
+    top: 205%;
+    left: 65%;
+    transform: translate(-50%, -50%); 
+}
+.side12{
+    position: absolute;
+    top: 205%;
+    left: 80%;
+    transform: translate(-50%, -50%); 
+}
+.sides7{
+    position: absolute;
+    top:220% ;
+    left: 12%;
+}
+
+
+.side13{
+    position: absolute;
+    top: 245%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+}
+.side14{
+    position: absolute;
+    top: 245%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+}
+.sides8{
+    position: absolute;
+    top: 220%;
+    left: 60%;
+}
+.side15{
+    position: absolute;
+    top: 245%;
+    left: 65%;
+    transform: translate(-50%, -50%); 
+}
+.side16{
+    position: absolute;
+    top: 245%;
+    left: 80%;
+    transform: translate(-50%, -50%); 
+}
+.sides9{
+    position: absolute;
+    top: 260%;
+    left: 12%;
+}
+.side17{
+    position: absolute;
+    top: 285%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+}
+.side18{
+    position: absolute;
+    top: 285%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+}
+.sides10{
+    position: absolute;
+    top: 260%;
+    left: 60%;
+}
+.side19{
+    position: absolute;
+    top: 285%;
+    left: 65%;
+    transform: translate(-50%, -50%); 
+}
+.side20{
+    position: absolute;
+    top: 285%;
+    left: 80%;
+    transform: translate(-50%, -50%); 
+}
+.sides11{
+    position: absolute;
+    top: 300%;
+    left: 12%;
+}
+.side21{
+    position: absolute;
+    top: 325%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+}
+.side22{
+    position: absolute;
+    top: 325%;
+    left: 31%;
+    transform: translate(-50%, -50%);
 }
