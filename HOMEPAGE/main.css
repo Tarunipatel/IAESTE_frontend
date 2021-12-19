@@ -1,33 +1,42 @@
 *
 {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-.selector-for-some-widget {
-  box-sizing: content-box;
-}
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
-html,body
+body
 {
-    height: 100vh;
     font-family: 'Roboto';
-    padding: 0;
-    margin: 0;
-    height: 3500px;
-    white-space: nowrap;
+    height: 100vh;
     overflow-x: hidden;
 }
-a
+::-webkit-scrollbar
 {
-    text-decoration: none;
+    display: none;
 }
-ul
-{
-    list-style-type: none;
-}
-img
+.hero1
 {
     width: 100%;
-    height: 800px;
+    font-family: 'Roboto';
+    position: absolute;
+    overflow: hidden;
+}
+.ms
+{
+    color: white;
+    margin-top: 16em;
+}
+.ms h1
+{
+    font-size:7em;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 0.25em;
+}
+.ms h2
+{
+    font-size: 2em;
 }
 header
 {
@@ -35,32 +44,51 @@ header
     justify-content: space-between;
     align-items: center;
     padding: 1em;
-    overflow: hidden;
+    overflow-x: hidden;
     position: absolute;
     width: 100%;
+}
+#know_more
+{
+    border: none;
+    color: white;
+    background: linear-gradient(rgb(22, 89, 167),rgb(10, 151, 216));
+    padding: 1em 2em;
+    border-radius: 5px;
+    margin-top: 3em;
+    display: none;
 }
 .navbar ul
 {
     display: flex;
+    overflow: hidden;
+    margin-right: 2em;
 }
 .navbar ul li a
 {
+    text-decoration: none;
     color: white;
     margin: 0 1em;
     font-size: 1.3em;
+    white-space: nowrap;
 }
-
+.navbar ul li a:hover
+{
+    color: black;
+    border-bottom: 2px solid black;
+}
 .main-section .main_section_logo
 {
     text-align: center;
-    margin-top: 16em;
-    transform: scale(1.6);
+    margin-top: 18em;
+    transform: scale(1.75);
 }
 .main-section .buttons 
 {
     display: block;
     margin: 0 auto;
     text-align: center;
+    margin-top: -1em;
 }
 .main-section h1
 {
@@ -70,6 +98,10 @@ header
     margin-top: 1.5em;
     font-size: 3em;
 }
+ul
+{
+    list-style: none;
+}
 .main-section .buttons button
 {
     border: none;
@@ -78,7 +110,7 @@ header
     border-radius: 4px;
     font-size: 1.2em;
     color: white;
-    margin-top: 3em;
+    margin-top: 4em;
 }
 .main-section .buttons button:hover
 {
@@ -93,84 +125,76 @@ header
 {
     margin-left: 1em;
 }
-.img-slider
+.slider
 {
-    z-index: 1;
-    position: relative;
-    width: 100%;
+    width:100%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
 }
-.img-slider .slide
+.slides
+{
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+.slider .slides .slide
 {
     position: absolute;
     width: 100%;
     clip-path: circle(0% at 0 50%);
+    left: 0;
+    right: 0;
 }
-.img-slider .slide.active
+.slider .slides .slide.active
 {
     clip-path: circle(150% at 0 50%);
     transition: 0.5s;
     transition-property: clip-path;
 }
-.img-slider .slide img
+.slide
 {
     width: 100%;
+    transition: 1s;
 }
-.img-slider .navigation
+.slide img
+{
+    width: 100%;
+    height: 820px;
+}
+.navigation
 {
     position: absolute;
+    width: 100%;
     display: flex;
-    z-index: 2;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 45em;
-}
-.img-slider .navigation .btn
+    top: 95%;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: -3em;
+} 
+.navigation .btn
 {
     background-color: white;
     border: none;
     width: 175px;
-    height: 4px;
     margin: 0 1em;
-    border-radius: 2px;
+    border-radius:1.5px;
+    cursor: pointer;
 }
-.img-slider .navigation .btn.active
+.navigation .btn.active
 {
-    background: linear-gradient(rgb(32, 133, 228),rgb(12, 87, 148));
-}
-.hero1
-{
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    left: 0;
-    right: 0;
+    background-color: rgb(23, 166, 233);
 }
 .white
 {
-    position: absolute;
-    top: 90%;
-    height: 1400px;
-    width: 100%;
-    background-color: white;
-    margin-top: 4em;
-}
-::-webkit-scrollbar
-{
-    display:none;
-}
-.blocks
-{
-    position: absolute;
-    bottom: 55%;
-    place-content: center;
-    text-align: center;
-    left: 0;
-    right: 0;
-    z-index: 2;
+    margin-top: 22em;
 }
 .block1,.block2,.block3,.block4
 {
-    position: relative;
     background-color: rgba(19, 128, 218,1);
     width: 250px;
     height: 250px;
@@ -178,6 +202,7 @@ header
     border-radius: 10px;
     box-shadow: 5px 5px 20px rgb(58, 162, 231);
     cursor: pointer;
+    text-align: center;
 }
 .blockBlock1
 {
@@ -194,14 +219,58 @@ header
 }
 .block1 h1
 {
-    position: absolute;
-    left: 0;
-    right: 0;
     color: white;
-    bottom: 20%;
     font-size: 1.3em;
     font-weight: 400;
     margin:0 1em;
+    margin-top: -0.5em;
+}
+.block2 h1
+{
+    color: white;
+    font-size: 1.3em;
+    font-weight: 400;
+    margin:0 1em;
+    margin-top: -0.5em;
+}
+.block3 h1
+{
+    color: white;
+    font-size: 1.3em;
+    font-weight: 400;
+    margin:0 1em;
+    margin-top: -1em;
+}
+.block4 h1
+{
+    color: white;
+    font-size: 1.3em;
+    font-weight: 400;
+    margin:0 1em;
+}
+.block1 .icon1
+{
+    transform: scale(0.5);
+}
+.block2 .icon2
+{
+    margin-top: -0.5em;
+    transform: scale(0.4);
+}
+.block3 .icon3
+{
+    transform: scale(0.4);
+    display: block;
+    margin-top:-1em;
+}
+.block4 .icon4
+{
+    transform: scale(0.75);
+    display: block;
+    margin: 0 auto;
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+    margin-left: 0.8em;
 }
 .block1:hover
 {
@@ -219,89 +288,32 @@ header
 {
     background:linear-gradient(rgb(10, 122, 197),rgb(18, 70, 138));
 }
-.block1 .icon1
-{
-    transform: scale(0.5);
-}
-.block2 h1
-{
-    position: absolute;
-    left: 0;
-    right: 0;
-    color: white;
-    bottom: 20%;
-    font-size: 1.3em;
-    font-weight: 400;  
-    margin:0 1em;
-    text-align: center;
-}
-.block2 .icon2
-{
-    transform: scale(0.45);
-}
-.block3 h1
-{
-    position: absolute;
-    left: 0;
-    right: 0;
-    color: white;
-    bottom: 20%;
-    font-size: 1.3em;
-    font-weight: 400;  
-    margin:0 1em;
-}
-.block3 .icon3
-{
-    transform: scale(0.4);
-    display: block;
-    margin-top:-1em ;
-}
-.block4 h1
-{
-    position: absolute;
-    left: 0;
-    right: 0;
-    color: white;
-    bottom: 20%;
-    font-size: 1.3em;
-    font-weight: 400;  
-    margin:0 1em;
-}
-.block4 .icon4
-{
-    transform: scale(0.75);
-    display: block;
-    margin: 0 auto;
-    margin-top: 2em;
-    margin-left: 0.8em;
-}
 .numbers
 {
     background-color: rgb(212, 212, 212);
     width: 100%;
     height: 400px;
-    position: absolute;
-    top: 50%;
     margin-top: 2em;
     display: flex;
-    left: 0;
-    right: 0;
     color: white;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: contain;
+    overflow-x: hidden;
 }
 .counter
 {
     color: white;
-    font-size: 1.7em;
+    font-size: 2em;
     font-weight: 400;
 }
 .numbers h1
 {
-    font-weight: 400;
+    font-weight: 300;
     color: black;
 }
 .number1
 {
-    position: absolute;
     text-align: center;
     margin-left: 4em;
 }
@@ -312,108 +324,127 @@ header
 .number1-icon
 {
     transform: scale(0.45);
+    margin-top: 2.75em;
+    margin-bottom: 1em;
 }
 .number2
 {
-    position: absolute;
     text-align: center;
-    left: 0;
-    right: 0;
+    margin: 0 1em;
 }
 .number2-icon
 {
     transform: scale(0.45);
-    margin-top: 1.2em;
+    margin-top: 1.75em;
 }
 .number3
 {
-    position: absolute;
-    top: 0;
-    right: 0;
     text-align: center;
     margin-right: 4em;
 }
 .number3-icon
 {
     transform: scale(0.45);
+    margin-top: -0.5em;
 }
 .membership
 {
-    background-color: rgb(48, 47, 47);
-    width: 100%;
-    height: 600px;
-    position: relative;
-    margin-top: 125em; 
-    z-index: 1000;
+    background-color: black;
     color: white;
-    padding: 2em;
-}
-.membership p
-{
-    line-height: 25px;
-    font-size: 1.25em;
+    width: 100%;
+    height: 700px;
+    padding: 4em;
+    margin-top: 4em;
 }
 .membership h1
 {
-    margin-top: -0.25em;
-    font-size: 3em;
     text-align: center;
-    font-weight: 500;
+    font-size: 3em;
+    font-weight: 400;
+    border-bottom: 3px solid white;
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1em;
 }
-.membership .grid
+.grid
 {
     display: grid;
-    grid-template-columns: 50% 50%;
-}
-.txt1
-{
-    width:650px;
-}
-.txt2
-{
-    width: fit-content;
+    grid-template-columns: repeat(2,1fr);
 }
 .membership .txt2 button
 {
     border: none;
-    font-size: 1em;
+    font-size: 0.75em;
     background-color: rgb(34, 106, 199);
     padding: 1em 2em;
     color: white;
     border-radius: 5px;
+    margin-top: 1em;
 }
 .membership .txt2 button:hover
 {
     background:linear-gradient(rgb(14, 97, 136),rgb(16, 75, 151));
 }
+.grid p
+{
+    line-height: 1.75em;
+}
+.txt1
+{
+    font-size: 1.25em;
+    margin-right: 1em;
+}
+.txt2
+{
+    font-size: 1.25em;
+    margin-left: 1em;
+}
 .contact_us
 {
-    width: 100%;
-    margin-top: 4em;
     display: grid;
+    grid-template-columns: repeat(2,1fr);
     padding: 2em;
-    grid-template-columns: 60% 40%;
 }
 .contact_us1
 {
-    width: 700px;
-    height: 500px;
-    position: relative;
+    margin-right: 1em;
 }
-.contact_us1 iframe
+.container 
 {
-    width: 800px;
     position: relative;
-    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 75%;
+}
+  
+iframe 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.form
+{
+    margin-left: 1em;
+    transform: scale(0.95);
 }
 .contact_us .form h1
 {
     color: black;
+    text-align: center;
+    margin-bottom: 1em;
 }
 .contact_us .form h3
 {
     font-weight:400;
     font-size:1.2em;
+    margin: 1em 0;
 }
 input
 {
@@ -421,12 +452,11 @@ input
     height: 50px;
     border-radius: 5px;
     border: none;
-    background-color: rgb(194, 194, 194);
-}
-.counter
-{
-    font-size: 2em;
-    color: aqua;
+    /* background-color: rgb(194, 194, 194); */
+    margin: 1.5em 0;
+    background-color: transparent;
+    border: 3px solid rgb(0, 3, 206);
+    outline: none;
 }
 .message input
 {
@@ -438,17 +468,18 @@ input
     display: block;
     margin: 0 auto;
     margin-top: 2em;
-    background:linear-gradient(rgb(24, 163, 255),rgb(27, 109, 216));
+    background:linear-gradient(rgb(11, 64, 100),rgb(19, 104, 214));
     border: none;
     padding: 1em 4em;
     color: white;
-    font-size: 1.3em;
+    font-size: 1.15em;
     border-radius: 5px;
     cursor:pointer;
 }
 #sf:hover
 {
     background:linear-gradient(rgb(24, 163, 255),rgb(18, 70, 138));
+    transform: translateY(-2px);
 }
 .ig
 {
@@ -461,6 +492,21 @@ input
 .li
 {
     transform: scale(0.5);
+}
+.ig:hover
+{
+    transform: translate(-2px);
+    transform: scale(0.65);
+}
+.fb:hover
+{
+    transform: translate(-2px);
+    transform: scale(0.65);
+}
+.li:hover
+{
+    transform: translate(-2px);
+    transform: scale(0.65);
 }
 .handles
 {
@@ -491,11 +537,24 @@ input
 {
     transform: scale(0.5);
 }
+.hero2
+{
+    position: absolute;
+    width: 100%;
+}
+#countryName
+{
+    color: white;
+    font-size: 5em;
+    font-weight: 300;
+    margin-top: 4em;
+}
 .emaill
 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: -0.5em;
 }
 .phone svg
 {
@@ -507,133 +566,146 @@ input
     justify-content: center;
     align-items: center;
 }
-@media only screen and (max-width:1400px)
+@media only screen and (max-width:1100px)
 {
-    .contact_us1 iframe
+    .membership
     {
-        width: 700px;
+        height: 900px;
     }
 }
-@media only screen and (max-width:1300px)
+@media only screen and (max-width:900px)
 {
-    .contact_us1 iframe
+    .membership
     {
-        width: 650px;
+        height: 1200px;
     }
-}
-@media only screen and (max-width:1200px)
-{
-    .contact_us1 iframe
+    .grid
     {
-        width: 620px;
+        display: block;
+    }
+    .txt1
+    {
+        border-bottom: 2px solid white;
+    }
+    .txt2
+    {
+        margin-left: -0.15em;
+        margin-top: 2em;
+    }
+    .social-media
+    {
+        transform: scale(0.75);
+    }
+    .contact-details
+    {
+        margin-right: 2em;
+        margin-left: -2em;
+    }
+    .numbers
+    {
+        height: 300px;
+        overflow: hidden;
+        margin-top: 2em;
+    }
+    .number1
+    {
+        transform: scale(0.85);
+        margin: 0;
+        margin-left: 2em;
+    }
+    .number2
+    {
+        transform: scale(0.85);
+        margin: 0;
+    }
+    .number3
+    {
+        transform: scale(0.85);
+        margin: 0;
+        margin-left: -2em;
     }
 }
 @media only screen and (max-width:1100px)
 {
-    .body
-    {
-        height: 4000px;
-    }
     .contact_us
     {
-        display: unset;
+        display: block;
     }
     .form
     {
-        margin-top: 4em;
+        margin-top: 2em;
     }
     .form h1
     {
-        text-align: center;
+        border-bottom: 2px solid black;
     }
-    .contact_us1 iframe
+}
+@media only screen and (max-width:1000px)
+{
+    .navbar
     {
-        width: 1000px;
-        text-align: center;
-        display: block;
-        place-content: center;
-        margin-left: 2em;
-    }
-    .contact_us .form h3
-    {
+        transform: scale(0.9);
         margin-left: 4em;
+        margin-right:-2em;
     }
-    .contact_us .form input
+    .iaeste-logo
     {
-        width: 800px;
-        text-align: center;
-        display: block;
-        margin: 0 auto;
+        transform: scale(0.85);
     }
-    .white
+    .main-section
     {
-        position: absolute;
-        top: 100%;
-        height: 1000px;
-        width: 100%;
-        background-color: white;
-        margin-top: 4em;
+        transform: scale(0.85);
+    }
+    .navigation
+    {
+        transform: scale(0.9);
+    }
+    .ms 
+    {
+        transform: scale(0.75);
+    }
+    #countryName
+    {
+        transform: scale(0.75);
     }
 }
 @media only screen and (max-width:800px)
 {
-    input
+    .navbar
     {
-        max-width: 600px;
+        transform: scale(0.8);
+        margin: 0;
     }
-    header
+    .iaeste-logo
     {
-        transform: scale(0.9);
+        transform: scale(0.75);
     }
     .main-section
     {
-        transform: scale(0.9);
+        transform: scale(0.75);
+    }
+    .ms
+    {
+        transform: scale(0.65);
     }
     .navigation .btn
     {
-        transform: scale(0.9);
-    }
-    iframe
-    {
-        max-width: 700px;
-        text-align: center;
-        position: inherit;
-        right: -5%;
-    }
-    .grid
-    {
-    display: grid;
-    }
-    .txt1,.txt2
-    {
-        transform: scale(0.8);
-        margin-left: -2em;
-        margin-top: -1em;
-    }
-}
-@media only screen and (max-width:700px)
-{
-    input
-    {
-        max-width: 400px;
-    }
-    .grid
-    {
-        margin-left: 1em;
-    }
-    .txt1
-    {
-        margin-right: 1em;
-    }
-    .txt2
-    {
-        margin-left: 1em;
+        width: 1px;
+        border-radius: 50%;
     }
 }
 @media only screen and (max-width:600px)
 {
-    input
+    .membership
     {
-        max-width: 400px;
+        height: 1300px;
+    }
+    #sf
+    {
+        font-size: 1em;
+    }
+    .iaeste_benefits
+    {
+        text-align: center;
     }
 }
