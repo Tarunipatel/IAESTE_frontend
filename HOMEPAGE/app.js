@@ -2,7 +2,6 @@ const slides = document.querySelectorAll('.slide');
 const buttons = document.querySelectorAll('.btn');
 
 const currentSlide = 1;
-
 const repeat = ()=>
 {
     let i=0;
@@ -54,7 +53,13 @@ buttons.forEach((button,i)=>
         currentSlide = i;
     })
 })
-
+$(document).ready(function()
+{
+  $(".counter").counterUp({
+    delay:10,
+    time:1200
+  });
+});
 const country = document.querySelector('.countries');
 const images = ['France','UnitedKingdom','Canada','Switzerland','Australia','Greece'];
 const countryName = document.querySelector('#countryName');
@@ -89,10 +94,3 @@ const countryChange = ()=>
     rep();
 }
 countryChange();
-$(document).ready(function()
-{
-  $(".counter").counterUp({
-    delay:10,
-    time:1200
-  });
-});
