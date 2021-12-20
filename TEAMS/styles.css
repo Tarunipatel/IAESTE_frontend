@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
-body
-{
-    font-family: 'Roboto';
-    padding: 0;
-    margin: 0;
-}
-.iaeste-logo
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+  }
+
+  
+  .iaeste-logo
 {
     transform: scale(0.6);
     margin-left: 2em;
@@ -26,7 +25,7 @@ body
     font-size: 1.25em;
 }
 .navbar
-{
+{   
     color: white;
 }   
 .nav
@@ -36,6 +35,7 @@ body
     align-items: center;
     background: linear-gradient(#0B3D59,  #49C0B5);
     height: 5em;
+    width: 100%;
 
 }
 .header-pic{
@@ -43,324 +43,91 @@ body
    
 }
 h2{
+    font-size: 30px;
     text-align: center;
     text-decoration: none;
     text-decoration: underline;
     text-decoration-color: #0B3D59;
     font-family: 'roboto';
     letter-spacing: 0.09cm;
+    margin-top: 50px;
     background: -webkit-linear-gradient( #333,#0d4e74);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-/* .senior{
-    display: flex;
-    justify-content: center;
-
-}
-.image{
-    height: 200px;
-    width: 200px;  
-    margin-right: 2em;
-    margin-top: 2em;
-  
-}
-.taruni{
-    height: 180px;
+  .flip-card {
+    background-color: transparent;
     width: 180px;
-  
-}
-.taruni1{
     height: 180px;
-    width: 180px;
+    perspective: 1000px;
+    border-radius: 20px;
+    border-radius: 7%;
+  }
   
-}
-.image1{
-    height: 200px;
-    width: 200px;
-    margin-left: 2em;
-    margin-top: 2em;
-    
-} */
-.middle{
-    position: absolute;
-    top:40%;
-    left: 40%;
-     transform: translate(-50%, -50%);
-}
-.card{
-  cursor: pointer;
-  width: 180px;
-  height: 180px;
+  .flip-card-inner {
 
-
-}
-.front, .back{
+    border-radius: 20px;
+    position: relative;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    position: absolute;
-    transition: transform .6s linear;
-}
-.front img{
-    height: 100%;
-    width: 100%;
-    border-radius: 7%;
-}
-.front{
     
-    transform: perspective(600px) rotateY(0deg);
-}
-
-.back{
-    border-radius: 7%;
-    background: #0B3D59;
-    transform: perspective(600px) rotateY(180deg);
-}
-
-.back-content{
-    color:#333;
-    text-align: center;
-    width: 100%;
-
-}
-.sm{
-    margin: 20px 0;
-}
-.sm  a{
-display: inline-flex;
-width: 40px;
-height: 40px;
-justify-content: center;
-align-items: center;
-color: pink; 
-font-size: 18px;
-transition: 0.4s;
-border-radius: 50%;
-}
-.sm a:hover{
-    background:linear-gradient(  #38B449,#D6DF23);
+  }
   
-    color: cyan ;
-}
-.card:hover > .front{
-    transform: perspective(600px) rotateY(-180deg);
-}
-.card:hover > .back{
-    transform: perspective(600px) rotateY(0deg);
-}
-.middle1{
-    position: absolute;
-    top:40%;
-    left: 60%;
-     transform: translate(-50%, -50%);
-}
-.junior-board{
-    text-align: center;
-    text-decoration: none;
-    text-decoration: underline;
-    text-decoration-color: #0B3D59;
-    font-family: 'roboto';
-    letter-spacing: 0.09cm;
-    background: -webkit-linear-gradient( #333,#0d4e74);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding-top: 20%;
-}
-.sides1{
-    position: absolute;
-    top: 90%;
-    left: 12%;
-}
-.side1{
-    position: absolute;
-    top: 115%;
-    left: 16%;
-    transform: translate(-50%, -50%);
-}
-.side2{
-    position: absolute;
-    top: 115%;
-    left: 31%;
-    transform: translate(-50%, -50%); 
-}
-.sides2{
-    position: absolute;
-    top: 90%;
-    left: 60%;
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
     
+   
+  }
+  
+  .flip-card-back {
+     text-align: center; 
+    background-color: #041d2e;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 7%;
+  }
+  .Senior-Board{
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+
+  }
+  .flip-card.one{
+      margin-right: 2em;
+  }
+  .Junior-Board{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+
 }
-.side3{
-    position: absolute;
-    top: 115%;
-    left: 65%;
-    transform: translate(-50%, -50%); 
+.group1,.group2{
+    display: flex;
+
 }
-.side4{
-    position: absolute;
-    top: 115%;
-    left: 80%;
-    transform: translate(-50%, -50%); 
+.flip-card.three{
+    margin-right: 2em;
 }
-.sides3{
-    position: absolute;
-    top: 135%;
-    left: 12%;
-}
-.side5{
-    position: absolute;
-    top: 160%;
-    left: 16%;
-    transform: translate(-50%, -50%);
+.flip-card.four{
+    margin-right: 2em;
+    margin-left: 2em;
 }
 
-.side6{
-    position: absolute;
-    top: 160%;
-    left: 31%;
-    transform: translate(-50%, -50%); 
-}
-.sides4{
-    position: absolute;
-    top: 135%;
-    left: 60%;
-    
-}
-.side7{
-    position: absolute;
-    top: 160%;
-    left: 65%;
-    transform: translate(-50%, -50%); 
-}
-
-.side8{
-    position: absolute;
-    top: 160%;
-    left: 80%;
-    transform: translate(-50%, -50%); 
-}
-.sides5{
-    position: absolute;
-    top: 180%;
-    left: 12%;
-}
-.side9{
-    position: absolute;
-    top: 205%;
-    left: 16%;
-    transform: translate(-50%, -50%);
-}
-.side10{
-    position: absolute;
-    top: 205%;
-    left: 31%;
-    transform: translate(-50%, -50%);
-}
-
-.sides6{
-    position: absolute;
-    top: 180%;
-    left: 60%;
-}
-.side11{
-    position: absolute;
-    top: 205%;
-    left: 65%;
-    transform: translate(-50%, -50%); 
-}
-.side12{
-    position: absolute;
-    top: 205%;
-    left: 80%;
-    transform: translate(-50%, -50%); 
-}
-.sides7{
-    position: absolute;
-    top:220% ;
-    left: 12%;
-}
-
-
-.side13{
-    position: absolute;
-    top: 245%;
-    left: 16%;
-    transform: translate(-50%, -50%);
-}
-.side14{
-    position: absolute;
-    top: 245%;
-    left: 31%;
-    transform: translate(-50%, -50%);
-}
-.sides8{
-    position: absolute;
-    top: 220%;
-    left: 60%;
-}
-.side15{
-    position: absolute;
-    top: 245%;
-    left: 65%;
-    transform: translate(-50%, -50%); 
-}
-.side16{
-    position: absolute;
-    top: 245%;
-    left: 80%;
-    transform: translate(-50%, -50%); 
-}
-.sides9{
-    position: absolute;
-    top: 260%;
-    left: 12%;
-}
-.side17{
-    position: absolute;
-    top: 285%;
-    left: 16%;
-    transform: translate(-50%, -50%);
-}
-.side18{
-    position: absolute;
-    top: 285%;
-    left: 31%;
-    transform: translate(-50%, -50%);
-}
-.sides10{
-    position: absolute;
-    top: 260%;
-    left: 60%;
-}
-.side19{
-    position: absolute;
-    top: 285%;
-    left: 65%;
-    transform: translate(-50%, -50%); 
-}
-.side20{
-    position: absolute;
-    top: 285%;
-    left: 80%;
-    transform: translate(-50%, -50%); 
-}
-.sides11{
-    position: absolute;
-    top: 300%;
-    left: 12%;
-}
-.side21{
-    position: absolute;
-    top: 325%;
-    left: 16%;
-    transform: translate(-50%, -50%);
-}
-.side22{
-    position: absolute;
-    top: 325%;
-    left: 31%;
-    transform: translate(-50%, -50%);
-}
-.element9{
-}
+  
