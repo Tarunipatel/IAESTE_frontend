@@ -1,7 +1,6 @@
 const slides = document.querySelectorAll('.slide');
 const buttons = document.querySelectorAll('.btn');
 
-const ex = 2;
 const currentSlide = 1;
 const repeat = ()=>
 {
