@@ -31,47 +31,37 @@ const repeat = ()=>
     repeater();
 }
 repeat();
-const manualNav = (manual)=>
-{
-    slides.forEach((slide)=>
-    {
+const manualNav = (manual) => {
+    slides.forEach((slide) => {
         slide.classList.remove('active');
     })
-    buttons.forEach((button)=>
-    {
+    buttons.forEach((button) => {
         button.classList.remove('active');
     })
     slides[manual].classList.add('active');
     buttons[manual].classList.add('active');
 }
 
-buttons.forEach((button,i)=>
-{
-    button.addEventListener('click',()=>
-    {
+buttons.forEach((button, i) => {
+    button.addEventListener('click', () => {
         manualNav(i);
         currentSlide = i;
     })
 })
-$(document).ready(function()
-{
-  $(".counter").counterUp({
-    delay:10,
-    time:1200
-  });
+$(document).ready(function () {
+    $(".counter").counterUp({
+        delay: 10,
+        time: 1000
+    });
 });
 const country = document.querySelector('.countries');
 const images = ['France','UnitedKingdom','Canada','Switzerland','Australia','Greece'];
 const countryName = document.querySelector('#countryName');
-const countryChange = ()=>
-{
-    let i=0;
-    const rep = ()=>
-    {
-        setTimeout(()=>
-        {
-            if(images[i]==='UnitedKingdom')
-            {
+const countryChange = () => {
+    let i = 0;
+    const rep = () => {
+        setTimeout(() => {
+            if (images[i] === 'UnitedKingdom') {
                 countryName.innerText = 'United Kingdom';
             }
             else
@@ -80,16 +70,14 @@ const countryChange = ()=>
             }
             country.src = `Countries/${images[i]}.jpg`;
             i++;
-            if(i==images.length)
-            {
-                i=0;
+            if (i == images.length) {
+                i = 0;
             }
-            if(i>=images.length)
-            {
+            if (i >= images.length) {
                 return;
             }
             rep();
-        },1000)
+        }, 1000)
     }
     rep();
 }
