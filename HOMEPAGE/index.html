@@ -172,7 +172,6 @@
                     </div>
                 </div>
                 <img id="home1_landscape" src="Images/Home2.jpg" alt="">
-                <!-- <img style="background-size: cover; background-position: top;" id="home2_portrait" src="Images/Home1_portrait.jpg" alt=""> -->
             </div>
             <div class="slide">
                 <div style="width: 100%; position: absolute; z-index: 1000;" class="hero3">
@@ -465,8 +464,8 @@
                 </div>
             </div>
         </div>
-        <div data-aos="slide-up" class="numbers">
-            <div class="number1">
+        <div data-aos="slide-down" class="numbers">
+            <div data-aos="zoom-in-right" class="number1">
                 <div class="number1-icon">
                     <svg width="195" height="195" viewBox="0 0 195 195" fill="none" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -486,7 +485,7 @@
                     <h1>Friendships</h1>
                 </div>
             </div>
-            <div class="number2">
+            <div data-aos="zoom-in-up" class="number2">
                 <div class="number2-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="257.985" height="206.147"
                         viewBox="0 0 257.985 206.147">
@@ -521,7 +520,7 @@
                     style="color:rgb(35, 130, 212); font-size: 1.8em;">+</span>
                 <h1>Countries</h1>
             </div>
-            <div class="number3">
+            <div data-aos="zoom-in-left" class="number3">
                 <div class="number3-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256"
                         height="244" viewBox="0 0 256 244">
@@ -543,9 +542,9 @@
         </div>
     </div>
     <div class="membership">
-        <h1>Membership</h1>
+        <h1 data-aos="slide-down">Membership</h1>
         <div class="grid">
-            <div class="txt1">
+            <div data-aos="slide-right" class="txt1">
                 <p>Enroll in IAESTE today and get an opportunity to work and travel to countries in Europe, Asia,
                     Africa,Australia, North America & Latin America!</p>
                 <h2 class="iaeste_benefits" style="border-bottom: 2px solid white; width: 250px; white-space: nowrap;">
@@ -556,7 +555,7 @@
                 <p>4. Most of the living expenses covered by a liberal stipend paid to the students</p>
                 <p>5. Big boost for CV</p>
             </div>
-            <div class="txt2">
+            <div data-aos="slide-left" class="txt2">
                 <p>
                     Registration fees is as follows:<br>
                     INR 2950/- for B.Tech and B.Arch (4 and 5 year <br>courses)
@@ -569,33 +568,33 @@
                 </p>
                 <p>Want to know more about how to follow along
                     the membership drive?</p>
-                <button style="display: block; margin: 0 auto;">Know More</button>
+                <button data-aos="zoom-in-up" style="display: block; margin: 0 auto;">Know More</button>
             </div>
         </div>
     </div>
-    <div class="contact_us">
-        <div style="box-shadow: 3px 3px 10px black;" class="contact_us1 container">
+    <div style="margin-bottom: 6em;" class="contact_us">
+        <div data-aos="slide-right" style="box-shadow: 3px 3px 10px black;" class="contact_us1 container">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.877133205484!2d75.56304561503671!3d26.843859969513066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4850e05bee9b%3A0x1b8d67402d4eb863!2sManipal%20University%20Jaipur!5e0!3m2!1sen!2sin!4v1638751201573!5m2!1sen!2sin"
-                width="700" height="550" allowfullscreen="" loading="lazy">
+                width="900" height="550" allowfullscreen="" loading="lazy">
             </iframe>
         </div>
-        <div class="form">
-            <h1 style="border-bottom: 2px solid black;">FEEDBACK</h1>
+        <div data-aos="slide-left" class="form">
+            <h1 style="border-bottom: 2px solid black; margin-bottom: 2em; margin-top: -1em;">FEEDBACK</h1>
             <div style="margin-bottom: 2em;" class="name">
                 <input placeholder="Enter Your Name" type="text" name="" id="">
             </div>
             <div class="email">
                 <input placeholder="Enter Your Email" type="text" name="" id="">
             </div>
-            <div class="message">
-                <h3>Message</h3>
-                <input class="msg" type="text" name="" id="">
+            <div style="margin-top: 1.5em;" class="message">
+                <input class="msg" type="text" name="msg" id="msg" placeholder="Write Your Feedback" style="text-align: start;">
             </div>
             <button id="sf">Submit Feedback</button>
         </div>
     </div>
-    <div style="margin-bottom: 2em;" class="handles">
+    <hr style="border: 1px solid black;">
+    <div style="margin-left: -2em; margin-top: 3em; padding: 0;" class="handles">
         <div class="social-media">
             <div class="ig">
                 <svg id="_3225191_app_instagram_logo_media_popular_icon"
@@ -678,7 +677,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-          offset:300,
+          offset:180,
           duration:600  
       });
     </script>
