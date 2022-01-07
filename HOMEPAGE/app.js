@@ -51,23 +51,18 @@ buttons.forEach((button, i) => {
 $(document).ready(function () {
     $(".counter").counterUp({
         delay: 10,
-        time: 1000
+        time: 1400
     });
 });
 const country = document.querySelector('.countries');
-const images = ['France','UnitedKingdom','Canada','Switzerland','Australia','Greece'];
+const images = ['France','Canada','Switzerland','Australia','Greece'];
 const countryName = document.querySelector('#countryName');
 const countryChange = () => {
     let i = 0;
     const rep = () => {
-        setTimeout(() => {
-            if (images[i] === 'UnitedKingdom') {
-                countryName.innerText = 'United Kingdom';
-            }
-            else
-            {
-                countryName.innerText = `${images[i]}`;
-            }
+        setTimeout(() => 
+        {
+            countryName.innerText = `${images[i]}`;
             country.src = `Countries/${images[i]}.jpg`;
             i++;
             if (i == images.length) {
