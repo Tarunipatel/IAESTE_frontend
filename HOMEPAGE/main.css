@@ -372,6 +372,7 @@ ul
     height: 700px;
     padding: 4em;
     margin-top: 4em;
+    margin-bottom: 5em;
 }
 .membership h1
 {
@@ -422,6 +423,7 @@ ul
     display: grid;
     grid-template-columns: repeat(2,1fr);
     padding: 2em;
+    grid-gap: 4em;
 }
 .contact_us1
 {
@@ -501,33 +503,30 @@ input
 }
 .ig
 {
-    transform: scale(0.5);
+    transform: scale(0.4);
 }
 .fb
 {
-    transform: scale(0.5);
+    transform: scale(0.4);
 }
 .li
 {
-    transform: scale(0.5);
+    transform: scale(0.4);
 }
 .ig:hover
 {
     transform: translate(-2px);
-    transform: scale(0.65);
-    box-shadow: 2px 2px 10px black;
+    transform: scale(0.5);
 }
 .fb:hover
 {
     transform: translate(-2px);
-    transform: scale(0.65);
-    box-shadow: 2px 2px 10px black;
+    transform: scale(0.5);
 }
 .li:hover
 {
     transform: translate(-2px);
-    transform: scale(0.65);
-    box-shadow: 2px 2px 10px black;
+    transform: scale(0.5);
 }
 .handles
 {
@@ -596,28 +595,6 @@ input
 {
     color: aqua;
 }
-#home1_portrait
-{
-    display: none;
-}
-#home1_landscape
-{
-    display: visible;
-}
-#home1_portrait
-{
-    display: none;
-}
-#home2_landscape
-{
-    display: visible;
-}
-
-
-
-
-
-
 
 
 
@@ -632,14 +609,6 @@ input
 }
 @media only screen and (max-width:900px)
 {
-    #home1_landscape
-    {
-        display: none;
-    }
-    #home1_portrait
-    {
-        display: visible;
-    }
     .membership
     {
         height: 1300px;
@@ -668,24 +637,24 @@ input
     }
     .numbers
     {
-        height: 300px;
+        height: 350px;
         overflow: hidden;
         margin-top: 2em;
     }
     .number1
     {
-        transform: scale(0.85);
+        transform: scale(0.75);
         margin: 0;
         margin-left: 2em;
     }
     .number2
     {
-        transform: scale(0.85);
+        transform: scale(0.75);
         margin: 0;
     }
     .number3
     {
-        transform: scale(0.85);
+        transform: scale(0.75);
         margin: 0;
         margin-left: -2em;
     }
@@ -698,7 +667,14 @@ input
     }
     .form
     {
-        margin-top: 2em;
+        margin-top: 6em;
+        transform: scale(0.5);
+    }
+    .form input
+    {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
     }
     .form h1
     {
