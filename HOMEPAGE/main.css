@@ -22,6 +22,10 @@ body
     position: absolute;
     overflow: hidden;
 }
+.iaeste-logo
+{
+    margin-left: 2em;
+}
 .ms
 {
     color: white;
