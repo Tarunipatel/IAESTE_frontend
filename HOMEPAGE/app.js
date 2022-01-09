@@ -96,10 +96,8 @@ blocks.forEach((block,j)=>
 {
     block.addEventListener('click',()=>
     {
-        console.log('Block Clicked');
         manualBlock(j);
         currentBlock = j;
-        console.log('Block Clicked');
     })
 })
 
