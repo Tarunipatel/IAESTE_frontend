@@ -201,7 +201,7 @@ ul
 }
 .white
 {
-    margin-top: 22em;
+    margin-top: 18em;
 }
 .block1,.block2,.block3,.block4
 {
@@ -227,7 +227,7 @@ ul
     justify-content: center;
     align-items: center;
 }
-.block1 h1
+.block.block1 h1
 {
     color: white;
     font-size: 1.3em;
@@ -235,7 +235,7 @@ ul
     margin:0 1em;
     margin-top: -0.5em;
 }
-.block2 h1
+.block.block2 h1
 {
     color: white;
     font-size: 1.3em;
@@ -243,7 +243,7 @@ ul
     margin:0 1em;
     margin-top: -0.5em;
 }
-.block3 h1
+.block.block3 h1
 {
     color: white;
     font-size: 1.3em;
@@ -251,29 +251,29 @@ ul
     margin:0 1em;
     margin-top: -1em;
 }
-.block4 h1
+.block.block4 h1
 {
     color: white;
     font-size: 1.3em;
     font-weight: 400;
     margin:0 1em;
 }
-.block1 .icon1
+.block.block1 .icon1
 {
     transform: scale(0.5);
 }
-.block2 .icon2
+.block.block2 .icon2
 {
     margin-top: -0.5em;
     transform: scale(0.4);
 }
-.block3 .icon3
+.block.block3 .icon3
 {
     transform: scale(0.4);
     display: block;
     margin-top:-1em;
 }
-.block4 .icon4
+.block.block4 .icon4
 {
     transform: scale(0.75);
     display: block;
@@ -282,19 +282,19 @@ ul
     margin-bottom: 2em;
     margin-left: 0.8em;
 }
-.block1:hover
+.block.block1:hover
 {
     background:linear-gradient(rgb(24, 163, 255),rgb(18, 70, 138));
 }
-.block2:hover
+.block.block2:hover
 {
     background:linear-gradient(rgb(10, 122, 197),rgb(18, 70, 138));
 }
-.block3:hover
+.block.block3:hover
 {
     background:linear-gradient(rgb(10, 122, 197),rgb(18, 70, 138));
 }
-.block4:hover
+.block.block4:hover
 {
     background:linear-gradient(rgb(10, 122, 197),rgb(18, 70, 138));
 }
