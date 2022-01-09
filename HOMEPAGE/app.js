@@ -77,3 +77,31 @@ const countryChange = () => {
     rep();
 }
 countryChange();
+
+const manualBlock = (current)=>
+{
+    blocks.forEach((block)=>
+    {
+        block.classList.add('active');
+    })
+    blocks.forEach((block)=>
+    {
+        block.classList.remove('active');
+    })
+    blocks[current].classList.add('active');
+}
+const currentBlock = 1;
+const blocks = document.querySelectorAll('.block');
+blocks.forEach((block,j)=>
+{
+    block.addEventListener('click',()=>
+    {
+        console.log('Block Clicked');
+        manualBlock(j);
+        currentBlock = j;
+        console.log('Block Clicked');
+    })
+})
+
+
+
