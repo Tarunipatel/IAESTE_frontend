@@ -632,6 +632,18 @@ input
 {
     display: none;
 }
+.block2Para
+{
+    display: none;
+}
+.block3Para
+{
+    display: none;
+}
+.block4Para
+{
+    display: none;
+}
 .block1Para.active
 {
     display: unset;
@@ -641,8 +653,41 @@ input
     text-align: center;
     color: white;
 }
+.block2Para.active
+{
+    display: unset;
+    display: visible;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    text-align: center;
+    color: white;
+}
+.block3Para.active
+{
+    display: unset;
+    display: visible;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    text-align: center;
+    color: white;
+}
+.block4Para.active
+{
+    display: unset;
+    display: visible;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    text-align: center;
+    color: white;
+}
+.block.block1.active svg
+{
+    margin-top: -1em;
+    margin-bottom: 0.5em;
+}
 .block.block1.active h1
 {
+    font-size: 1.5em;
     margin-bottom: 1.5em;
     margin-top: -2em;
 }
