@@ -96,6 +96,15 @@ const block1 = document.querySelector('.block.block1');
 const block2 = document.querySelector('.block.block2');
 const block3 = document.querySelector('.block.block3');
 const block4 = document.querySelector('.block.block4');
+
+
+
+const block1Para = document.querySelector('.block1Para');
+const block2Para = document.querySelector('.block2Para');
+const block3Para = document.querySelector('.block3Para');
+const block4Para = document.querySelector('.block4Para');
+
+
 block1.addEventListener('click',()=>
 {
     blocks.forEach((block)=>
@@ -104,6 +113,7 @@ block1.addEventListener('click',()=>
     })
     block1.classList.remove('notVisible');
     block1.classList.toggle('active');
+    block1Para.classList.toggle('active');
 })
 block2.addEventListener('click',()=>
 {
@@ -122,6 +132,7 @@ block3.addEventListener('click',()=>
     })
     block3.classList.remove('notVisible');
     block3.classList.toggle('active');
+    heading.classList.toggle('active');
 })
 block4.addEventListener('click',()=>
 {
