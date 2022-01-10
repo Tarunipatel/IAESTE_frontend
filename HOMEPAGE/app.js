@@ -123,6 +123,7 @@ block2.addEventListener('click',()=>
     })
     block2.classList.remove('notVisible');
     block2.classList.toggle('active');
+    block2Para.classList.toggle('active');
 })
 block3.addEventListener('click',()=>
 {
@@ -132,7 +133,7 @@ block3.addEventListener('click',()=>
     })
     block3.classList.remove('notVisible');
     block3.classList.toggle('active');
-    heading.classList.toggle('active');
+    block3Para.classList.toggle('active');
 })
 block4.addEventListener('click',()=>
 {
@@ -142,6 +143,7 @@ block4.addEventListener('click',()=>
     })
     block4.classList.remove('notVisible');
     block4.classList.toggle('active');
+    block4Para.classList.toggle('active');
 })
 
 
