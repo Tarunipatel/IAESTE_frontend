@@ -599,18 +599,21 @@ input
     z-index: 1000;
     width: 500px;
     height: 400px;
+    padding: 0 3em;
 }
 .block.block3.active
 {
     z-index: 1000;
     width: 500px;
     height: 400px;
+    padding: 0 3em;
 }
 .block.block4.active
 {
     z-index: 1000;
     width: 500px;
     height: 400px;
+    padding: 0 3em;
 }
 .block.block1.notVisible
 {
@@ -686,6 +689,39 @@ input
     margin-bottom: 0.5em;
 }
 .block.block1.active h1
+{
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+    margin-top: -2em;
+}
+.block.block2.active svg
+{
+    margin-top: -1em;
+    margin-bottom: 0.5em;
+}
+.block.block2.active h1
+{
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+    margin-top: -2em;
+}
+.block.block3.active svg
+{
+    margin-top: -1em;
+    margin-bottom: 0.5em;
+}
+.block.block3.active h1
+{
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+    margin-top: -2em;
+}
+.block.block4.active svg
+{
+    margin-top: -1em;
+    margin-bottom: 0.5em;
+}
+.block.block4.active h1
 {
     font-size: 1.5em;
     margin-bottom: 1.5em;
@@ -822,7 +858,12 @@ input
     }
     .iaeste-logo
     {
-        transform: scale(0.75);
+        display: none;
+    }
+    .navbar
+    {
+        display: block;
+        margin: 0 auto;
     }
     .main-section
     {
