@@ -592,6 +592,7 @@ input
     z-index: 1000;
     width: 500px;
     height: 400px;
+    padding: 0 3em;
 }
 .block.block2.active
 {
@@ -626,6 +627,24 @@ input
 .block.block4.notVisible
 {
     display: none;
+}
+.block1Para
+{
+    display: none;
+}
+.block1Para.active
+{
+    display: unset;
+    display: visible;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    text-align: center;
+    color: white;
+}
+.block.block1.active h1
+{
+    margin-bottom: 1.5em;
+    margin-top: -2em;
 }
 @media only screen and (max-width:1100px)
 {
