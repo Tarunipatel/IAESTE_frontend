@@ -1,36 +1,37 @@
 const slides = document.querySelectorAll('.slide');
 const buttons = document.querySelectorAll('.btn');
 
+const numbers = document.querySelector('.numbers');
 const currentSlide = 1;
-const repeat = ()=>
-{
-    let i=0;
-    const active = document.getElementsByClassName('active');
-    const repeater = ()=>
-    {
-        setTimeout(()=>
-        {
-            [...active].forEach((activeClass)=>
-            {
-                activeClass.classList.remove('active');
-            })
-            slides[i].classList.add('active');
-            buttons[i].classList.add('active');
-            i++;
-            if(i==slides.length)
-            {
-                i=0;
-            }
-            if(i>=slides.length)
-            {
-                return;
-            }
-            repeater();
-        },10000);
-    }
-    repeater();
-}
-repeat();
+// const repeat = ()=>
+// {
+//     let i=0;
+//     const active = document.getElementsByClassName('active');
+//     const repeater = ()=>
+//     {
+//         setTimeout(()=>
+//         {
+//             [...active].forEach((activeClass)=>
+//             {
+//                 activeClass.classList.remove('active');
+//             })
+//             slides[i].classList.add('active');
+//             buttons[i].classList.add('active');
+//             i++;
+//             if(i==slides.length)
+//             {
+//                 i=0;
+//             }
+//             if(i>=slides.length)
+//             {
+//                 return;
+//             }
+//             repeater();
+//         },10000);
+//     }
+//     repeater();
+// }
+// repeat();
 const manualNav = (manual) => {
     slides.forEach((slide) => {
         slide.classList.remove('active');
@@ -98,7 +99,10 @@ const block1Para = document.querySelector('.block1Para');
 const block2Para = document.querySelector('.block2Para');
 const block3Para = document.querySelector('.block3Para');
 const block4Para = document.querySelector('.block4Para');
-
+const cancel1 = document.querySelector('.cancel_button1');
+const cancel2 = document.querySelector('.cancel_button2');
+const cancel3 = document.querySelector('.cancel_button3');
+const cancel4 = document.querySelector('.cancel_button4');
 
 block1.addEventListener('click', () => {
     blocks.forEach((block) => {
@@ -107,6 +111,8 @@ block1.addEventListener('click', () => {
     block1.classList.remove('notVisible');
     block1.classList.toggle('active');
     block1Para.classList.toggle('active');
+    numbers.classList.toggle('active');
+    cancel1.classList.toggle('active');
 })
 block2.addEventListener('click', () => {
     blocks.forEach((block) => {
@@ -115,6 +121,8 @@ block2.addEventListener('click', () => {
     block2.classList.remove('notVisible');
     block2.classList.toggle('active');
     block2Para.classList.toggle('active');
+    numbers.classList.toggle('active');
+    cancel2.classList.toggle('active');
 })
 block3.addEventListener('click', () => {
     blocks.forEach((block) => {
@@ -123,6 +131,8 @@ block3.addEventListener('click', () => {
     block3.classList.remove('notVisible');
     block3.classList.toggle('active');
     block3Para.classList.toggle('active');
+    numbers.classList.toggle('active');
+    cancel3.classList.toggle('active');
 })
 block4.addEventListener('click', () => {
     blocks.forEach((block) => {
@@ -131,6 +141,8 @@ block4.addEventListener('click', () => {
     block4.classList.remove('notVisible');
     block4.classList.toggle('active');
     block4Para.classList.toggle('active');
+    numbers.classList.toggle('active');
+    cancel4.classList.toggle('active');
 })
 
 const prevButton = document.querySelector('.prev_button');
@@ -168,3 +180,4 @@ nextButton.addEventListener('click', () => {
     slides[k].classList.add('active');
     buttons[k].classList.add('active');
 })
+
