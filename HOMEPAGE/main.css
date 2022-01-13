@@ -314,19 +314,35 @@ ul
 }
 .block.block1:hover
 {
-    background:linear-gradient(#83a4d4,#b6fbff);
+    background-color: #1B75BB;
 }
 .block.block2:hover
 {
-    background:linear-gradient(#83a4d4,#b6fbff);
+    background-color: #1B75BB;
 }
 .block.block3:hover
 {
-    background:linear-gradient(#83a4d4,#b6fbff);
+    background-color: #1B75BB;
 }
 .block.block4:hover
 {
-    background:linear-gradient(#83a4d4,#b6fbff);
+    background-color: #1B75BB;
+}
+.block.block1:hover h1
+{
+    color: white;
+}
+.block.block2:hover h1
+{
+    color: white;
+}
+.block.block3:hover h1
+{
+    color: white;
+}
+.block.block4:hover h1
+{
+    color: white;
 }
 .numbers
 {
@@ -622,7 +638,8 @@ input
     width: 500px;
     height: 400px;
     padding: 0 3em;
-    background:linear-gradient(#83a4d4,#b6fbff);
+    background-color: #1B75BB;
+    position: relative;
 }
 .block.block2.active
 {
@@ -631,7 +648,8 @@ input
     height: 400px;
     padding: 0 3em;
     background: rgb(2,0,36);
-    background:linear-gradient(#83a4d4,#b6fbff);
+    background-color: #1B75BB;
+    position: relative;
 }
 .block.block3.active
 {
@@ -640,7 +658,8 @@ input
     height: 400px;
     padding: 0 3em;
     background: rgb(2,0,36);
-    background:linear-gradient(#83a4d4,#b6fbff);
+    background-color: #1B75BB;
+    position: relative;
 }
 .block.block4.active
 {
@@ -649,7 +668,8 @@ input
     height: 400px;
     padding: 0 3em;
     background: rgb(2,0,36);
-    background:linear-gradient(#83a4d4,#b6fbff);
+    background-color: #1B75BB;
+    position: relative;
 }
 .block.block1.notVisible
 {
@@ -690,7 +710,7 @@ input
     margin-top: 3em;
     margin-bottom: 2em;
     text-align: center;
-    color: black;
+    color: white;
 }
 .block2Para.active
 {
@@ -699,7 +719,7 @@ input
     margin-top: 3em;
     margin-bottom: 2em;
     text-align: center;
-    color: black;
+    color: white;
 }
 .block3Para.active
 {
@@ -708,7 +728,7 @@ input
     margin-top: 3em;
     margin-bottom: 2em;
     text-align: center;
-    color: black;
+    color: white;
 }
 .block4Para.active
 {
@@ -717,7 +737,7 @@ input
     margin-top: 3em;
     margin-bottom: 2em;
     text-align: center;
-    color: black;
+    color: white;
 }
 .block.block1.active svg
 {
@@ -729,6 +749,7 @@ input
     font-size: 1.5em;
     margin-bottom: 1.5em;
     margin-top: -2em;
+    color: white;
 }
 .block.block2.active svg
 {
@@ -740,6 +761,7 @@ input
     font-size: 1.5em;
     margin-bottom: 1.5em;
     margin-top: -2em;
+    color: white;
 }
 .block.block3.active svg
 {
@@ -751,6 +773,7 @@ input
     font-size: 1.5em;
     margin-bottom: 1.5em;
     margin-top: -2em;
+    color: white;
 }
 .block.block4.active svg
 {
@@ -762,6 +785,75 @@ input
     font-size: 1.5em;
     margin-bottom: 1.5em;
     margin-top: -2em;
+    color: white;
+}
+.cancel_button1
+{
+    transform: scale(0.45);
+    display: none;
+}
+.cancel_button1.active
+{
+    display: unset;
+    position: absolute;
+    right: 0;
+    top: 35px;
+    margin-right: 1em;
+}
+.cancel_button1.active:hover
+{
+    transform: scale(0.5);
+}
+.cancel_button2.active:hover
+{
+    transform: scale(0.5);
+}
+.cancel_button3.active:hover
+{
+    transform: scale(0.5);
+}
+.cancel_button4.active:hover
+{
+    transform: scale(0.5);
+}
+.cancel_button2
+{
+    transform: scale(0.45);
+    display: none;
+}
+.cancel_button2.active
+{
+    display: unset;
+    position: absolute;
+    right: 0;
+    top: 35px;
+    margin-right: 1em;
+}
+.cancel_button3
+{
+    transform: scale(0.45);
+    display: none;
+}
+.cancel_button3.active
+{
+    display: unset;
+    position: absolute;
+    right: 0;
+    top: 35px;
+    margin-right: 1em;
+}
+.cancel_button4
+{
+    transform: scale(0.45);
+    display: none;
+}
+.cancel_button4.active
+{
+    display: unset;
+    position: absolute;
+    right: 0;
+    top: 35px;
+    margin-right: 1em;
 }
 #mem_button
 {
