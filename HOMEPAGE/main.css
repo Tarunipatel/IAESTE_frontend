@@ -314,19 +314,19 @@ ul
 }
 .block.block1:hover
 {
-    background-color: #1B75BB;
+    background-color: #0B3D59;
 }
 .block.block2:hover
 {
-    background-color: #1B75BB;
+    background-color: #0B3D59;
 }
 .block.block3:hover
 {
-    background-color: #1B75BB;
+    background-color: #0B3D59;
 }
 .block.block4:hover
 {
-    background-color: #1B75BB;
+    background-color: #0B3D59;
 }
 .block.block1:hover h1
 {
@@ -371,6 +371,7 @@ ul
 {
     text-align: center;
     margin-left: 4em;
+    margin-top: -3em;
 }
 .number1 .info
 {
@@ -386,6 +387,7 @@ ul
 {
     text-align: center;
     margin: 0 1em;
+    margin-top: -1.5em;
 }
 .number2-icon
 {
@@ -396,6 +398,7 @@ ul
 {
     text-align: center;
     margin-right: 4em;
+    margin-top: -1.5em;
 }
 .number3-icon
 {
@@ -525,7 +528,8 @@ input
     display: block;
     margin: 0 auto;
     margin-top: 2em;
-    background:linear-gradient(rgb(11, 64, 100),rgb(19, 104, 214));
+    background:linear-gradient(#0B3D59,rgb(6, 113, 175)) ;
+    box-shadow: 2px 2px 10px #0B3D59;
     border: none;
     padding: 1em 4em;
     color: white;
@@ -535,7 +539,7 @@ input
 }
 #sf:hover
 {
-    background:linear-gradient(rgb(24, 163, 255),rgb(18, 70, 138));
+    background:linear-gradient(#0B3D59,rgb(6, 113, 175)) ;
     transform: translateY(-2px);
 }
 .ig
@@ -638,7 +642,7 @@ input
     width: 500px;
     height: 400px;
     padding: 0 3em;
-    background-color: #1B75BB;
+    background-color: #0B3D59;
     position: relative;
 }
 .block.block2.active
@@ -648,7 +652,7 @@ input
     height: 400px;
     padding: 0 3em;
     background: rgb(2,0,36);
-    background-color: #1B75BB;
+    background-color: #0B3D59;
     position: relative;
 }
 .block.block3.active
@@ -658,7 +662,7 @@ input
     height: 400px;
     padding: 0 3em;
     background: rgb(2,0,36);
-    background-color: #1B75BB;
+    background-color: #0B3D59;
     position: relative;
 }
 .block.block4.active
@@ -668,7 +672,7 @@ input
     height: 400px;
     padding: 0 3em;
     background: rgb(2,0,36);
-    background-color: #1B75BB;
+    background-color: #0B3D59;
     position: relative;
 }
 .block.block1.notVisible
@@ -860,12 +864,13 @@ input
     background-color: unset;
     display: block;
     margin: 0 auto;
-    background-color:rgb(15, 114, 180);
+    background:linear-gradient(rgb(7, 85, 104),#0B3D59);
     color: white;
 }
 #mem_button:hover
 {
     background-color: unset;
+    background: unset;
     background-color: white;
     color: black;
 }
