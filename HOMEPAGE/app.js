@@ -181,5 +181,4 @@ nextButton.addEventListener('click', () => {
     buttons[k].classList.add('active');
 })
 
-...
 
