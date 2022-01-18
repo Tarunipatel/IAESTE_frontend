@@ -115,34 +115,20 @@ p{
     top:43%;
     text-align: left;
 }
-
-.Block{
-    border: 5px solid #0B3D59;
-    border-radius: 20px;
-    width:90vw;
-    margin:auto;
-}
-
-.image-block{
-    width: 12vw;
-    height: 15vh;
-    float:left;
-    border: 5px solid #0B3D59;
-    margin:15px;
-    border-radius: 20px;
-    
-}
-.Block-text{
-    padding-left:10px;
-}
-.image-block-right{
-    float:right;
-}
-.blog-link{
-    color:#0B3D59;
-    font-weight:500;
-    text-decoration: underline;
+.card-pro
+{
     text-align: center;
+    padding: 40px;
+    transition: all 0.2s ease;
+    cursor: pointer
+}
+.card:hover {
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    transform: scale(1.1)
+}
+.card-img-top
+{
+    height: 300px;
 }
 iframe 
 {
@@ -306,6 +292,9 @@ input
  }  
 @media only screen and (max-width: 720px){
     
+    .card-pro{
+        padding-top:20px;
+    }
     .iaeste-logo{
       display: none;
     }
@@ -328,7 +317,7 @@ input
    {
        display: flex;
        justify-content:space-between;
-       align-items: center;
+        align-items: center;
        background: #0B3D59;
        height: 5em;
        width: 100%;
@@ -337,3 +326,4 @@ input
    
    }
    }
+   
