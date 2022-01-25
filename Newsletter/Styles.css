@@ -6,6 +6,7 @@ body
     margin: 0;
     color: #0B3D59;
     
+    
 }
 h1{
     
@@ -103,12 +104,12 @@ p{
 
 }
 .carousel{
-    width:85vw;
+    width:85%;
     margin:auto;
 }
 .carousel-inner {
     border-radius: 25px;
-    height:60vh;
+    height:80vh;
 }
 .carousel-caption{
     position:absolute;
@@ -116,11 +117,12 @@ p{
     text-align: left;
 }
 .card-pro
-{
+{   padding-top: 50px;
     text-align: center;
-    padding: 40px;
+    padding-left: 160px;
     transition: all 0.2s ease;
     cursor: pointer
+   
 }
 .card:hover {
     box-shadow: 5px 6px 6px 2px #e9ecef;
