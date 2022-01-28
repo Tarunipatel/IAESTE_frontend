@@ -51,6 +51,11 @@ header
     overflow-x: hidden;
     position: absolute;
     width: 100%;
+    z-index: 1000;
+}
+header .iaeste-logo
+{
+    margin-top: -0.5em;
 }
 #know_more
 {
@@ -181,7 +186,7 @@ ul
     position: absolute;
     width: 100%;
     display: flex;
-    top: 90%;
+    top: 87%;
     display: block;
     left: 0;
     right: 0;
@@ -290,9 +295,9 @@ ul
 .block.block2 .icon2
 {
     margin-bottom: 0em;
-    transform: scale(0.5);
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    transform: scale(0.75);
+    margin-top: 2em;
+    margin-bottom: 3.5em;
 }
 .block.block3 .icon3
 {
@@ -524,7 +529,7 @@ input
 }
 #sf
 {
-    text-align: center;
+    /* text-align: center;
     display: block;
     margin: 0 auto;
     margin-top: 2em;
@@ -535,13 +540,18 @@ input
     color: white;
     font-size: 1.15em;
     border-radius: 5px;
-    cursor:pointer;
+    cursor:pointer; */
+    font-size: 1.25em;
+    padding: 0.5em 2em;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0em;
 }
-#sf:hover
+/* #sf:hover
 {
     background:linear-gradient(#0B3D59,rgb(6, 113, 175)) ;
     transform: translateY(-2px);
-}
+} */
 .ig
 {
     transform: scale(0.4);
@@ -864,7 +874,7 @@ input
     background-color: unset;
     display: block;
     margin: 0 auto;
-    background:linear-gradient(rgb(7, 85, 104),#0B3D59);
+    background:linear-gradient(#095c8b,rgb(9, 120, 148));
     color: white;
 }
 #mem_button:hover
