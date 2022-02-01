@@ -884,6 +884,22 @@ input
     background-color: white;
     color: black;
 }
+.row1 h4,.row2 h4,.row3 h4
+{
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    font-size: 1.5em;
+}
+.row1 a,.row2 a,.row3 a
+{
+    display: block;
+    text-decoration: none;
+    margin: 0.5em 0;
+}
+.row1,.row2,.row3
+{
+
+}
 @media only screen and (max-width:1100px)
 {
     .membership
