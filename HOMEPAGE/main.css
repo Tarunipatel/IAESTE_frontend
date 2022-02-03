@@ -441,16 +441,16 @@ ul
 {
     border: none;
     font-size: 0.75em;
-    background-color: rgb(34, 106, 199);
+    background-color: white;
     padding: 1em 2em;
-    color: white;
+    color: black;
     border-radius: 5px;
     margin-top: 1em;
 }
 .membership .txt2 button:hover
 {
-    background-color: white;
-    color: black;
+    background-color: rgb(8, 67, 116);
+    color: white;
 }
 .grid p
 {
@@ -885,15 +885,13 @@ input
     background-color: unset;
     display: block;
     margin: 0 auto;
-    background:linear-gradient(#095c8b,rgb(9, 120, 148));
-    color: white;
+    background-color: white;
+    color: black;
 }
 #mem_button:hover
 {
-    background-color: unset;
-    background: unset;
-    background-color: white;
-    color: black;
+    background-color: rgb(8, 59, 117);
+    color: white;
 }
 .row1 h4,.row2 h4,.row3 h4
 {
@@ -907,9 +905,16 @@ input
     text-decoration: none;
     margin: 0.5em 0;
 }
-.row1,.row2,.row3
+footer h5
 {
-
+    font-size: 1.5em;
+    margin: 1em 0 1em 0;
+}
+footer a
+{
+    text-decoration: none;
+    font-size: 1.25em;
+    color: black;
 }
 @media only screen and (max-width:1100px)
 {
