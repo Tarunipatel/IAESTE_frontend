@@ -125,6 +125,24 @@ p{
     border : 5px solid #0B3D59;
     
 }
+footer h5
+{
+    font-size: 1.5em;
+    margin: 1em 0 1em 0;
+}
+footer a
+{
+    text-decoration: none;
+    font-size: 1.25em;
+    color: black;
+}
+.container 
+{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 75%;
+}
 @media only screen and (max-width: 800px)
     {
       body{
