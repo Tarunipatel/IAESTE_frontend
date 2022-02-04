@@ -22,10 +22,6 @@ body
     position: absolute;
     overflow: hidden;
 }
-.iaeste-logo
-{
-    margin-left: 2em;
-}
 .ms
 {
     color: white;
@@ -52,6 +48,7 @@ header
     position: absolute;
     width: 100%;
     z-index: 1000;
+    display: none;
 }
 header .iaeste-logo
 {
@@ -80,16 +77,46 @@ header .iaeste-logo
     margin: 0 1em;
     font-size: 1.3em;
     white-space: nowrap;
+    position: relative;
 }
-.navbar ul li a:hover
+#header a
 {
-    color: black;
-    border-bottom: 2px solid black;
+    white-space: nowrap;
+    margin: 0 0.5em; 
+    font-size: 1.15em; 
+    color: white;
+    position: relative;
 }
+#header a::after
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 20;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(15, 144, 219);
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+#header
+{
+    display: flex;
+    justify-content: center;
+}
+#header a:hover::after
+{
+    transform: scale(1);
+    transform-origin: left;
+}
+
 .main-section .main_section_logo
 {
     text-align: center;
-    margin-top: 18em;
+    margin-top: 12em;
     transform: scale(1.5);
 }
 .main-section .buttons 
@@ -164,6 +191,7 @@ ul
     clip-path: circle(0% at 0 50%);
     left: 0;
     right: 0;
+    top: 10%;
 }
 .slider .slides .slide.active
 {
@@ -179,7 +207,7 @@ ul
 .slide img
 {
     width: 100%;
-    height: 680px;
+    height: 600px;
 }
 .navigation
 {
@@ -887,6 +915,7 @@ input
     margin: 0 auto;
     background-color: white;
     color: black;
+    margin-top: 3em;
 }
 #mem_button:hover
 {
@@ -922,9 +951,22 @@ footer a
     {
         height: 900px;
     }
+    .iaeste-logo
+    {
+        display: none;
+    }
+    .navbar
+    {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
 }
 @media only screen and (max-width:900px)
 {
+    
     .membership
     {
         height: 1300px;
@@ -1016,6 +1058,7 @@ footer a
     .iaeste-logo
     {
         transform: scale(0.85);
+        display: none;
     }
     .main-section
     {
@@ -1043,7 +1086,7 @@ footer a
     .navbar
     {
         transform: scale(0.8);
-        margin: 0;
+        margin: 0 auto;
     }
     .iaeste-logo
     {
@@ -1053,6 +1096,7 @@ footer a
     {
         display: block;
         margin: 0 auto;
+        margin-left: -4em;
     }
     .main-section
     {
@@ -1069,6 +1113,15 @@ footer a
 }
 @media only screen and (max-width:700px)
 {
+    /* #navbar-bs
+    {
+        display: unset;
+        z-index: 10000;
+    }
+    header
+    {
+        display: none;
+    } */
     .numbers
     {
         display: block;
