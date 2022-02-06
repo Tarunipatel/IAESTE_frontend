@@ -176,12 +176,12 @@ ul
     display: block;
     margin: 0 auto;
     overflow: hidden;
-    border-radius: 10px;
+    position: relative;
 }
 .slides
 {
     width: 100%;
-    height: 500px;
+    height: 600px;
     display: flex;
 }
 .slider .slides .slide
@@ -191,7 +191,7 @@ ul
     clip-path: circle(0% at 0 50%);
     left: 0;
     right: 0;
-    top: 10%;
+    top: 0;
 }
 .slider .slides .slide.active
 {
@@ -207,19 +207,20 @@ ul
 .slide img
 {
     width: 100%;
-    height: 600px;
+    height: 700px;
 }
 .navigation
 {
     position: absolute;
     width: 100%;
     display: flex;
-    top: 87%;
+    top: 93%;
     display: block;
     left: 0;
     right: 0;
     margin: 0 auto;
     margin-top: -2em;
+    z-index: 2000;
 } 
 .arrows
 {
@@ -256,7 +257,7 @@ ul
 }
 .white
 {
-    margin-top: 18em;
+    margin-top: 10em;
 }
 .block1,.block2,.block3,.block4
 {
